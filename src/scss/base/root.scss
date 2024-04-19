@@ -6,9 +6,7 @@
   --color-3: #f8f8f8;
   --color-4: #ff035a;
 
-  --typography-fontFamily: "Neue Machina", system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --typography-fontFamily: "WixMadeforDisplay";
 
   @include media-breakpoint-up(xl) {
     --spacing-container: 32px;
