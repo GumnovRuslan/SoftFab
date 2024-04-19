@@ -1,6 +1,7 @@
 <% var htmlTop = { title: "SoftFab" }; %>
+
 <%=_.template(require('./../includes/_html-top.html').default)(htmlTop)%>
-<%=_.template(require('./../includes/header.html').default)()%>
+<%=_.template(require('./../includes/header.html').default)(htmlTop)%>
 
 
 <main class="content">
@@ -8,6 +9,7 @@
         <p>Hello</p>
     </div>
     <%=_.template(require('./../includes/body.html').default)()%>
+    <%=_.template(require('./../includes/second.html').default)()%>
 </main>
 
 <%=_.template(require('./../includes/footer.html').default)()%>

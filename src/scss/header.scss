@@ -1,2 +1,10 @@
 .header {
+  &__inner {
+    background: #000;
+  }
+
+  &__logo {
+    font-size: 20px;
+    color: #fff;
+  }
 }
