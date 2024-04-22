@@ -17,6 +17,14 @@ $font-base-url: "../../fonts/WixMadeforDisplay/";
   font-style: normal;
 }
 
+@font-face {
+  font-family: "WixMadeforDisplay";
+  src: url("#{$font-base-url}WixMadeforDisplay-SemiBold.woff2") format("woff2"),
+    url("#{$font-base-url}WixMadeforDisplay-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
 // @font-face {
 //   font-family: "Neue Machina";
 //   src: url("#{$font-base-urlp}NeueMachina-Ultralight.eot");

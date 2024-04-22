@@ -4,10 +4,14 @@
   --color-primary: #d6d6d6;
   --color-secondary: #151515;
   --color-black: #0c0c0c;
+  --color-gray-500: #3b3b3b;
   --color-gray-600: #9c9c9c;
   --color-gray-700: #8c8c8c;
+  --color-error: #ff5d5d;
 
   --color-text-primary: var(--color-primary, #d6d6d6);
+  --color-text-primary-2: var(--color-gray-600);
+  --color-text-primary-3: var(--color-gray-700);
   --color-text-secondary: var(--color-black);
 
   --color-bg-primary: var(--color-black);
@@ -16,15 +20,16 @@
 
   --typography-fontFamily: "WixMadeforDisplay";
 
-  @include media-breakpoint-up(xl) {
-    --spacing-container: 32px;
+  @include media-breakpoint-up(md) {
+    --spacing-container: 48px;
   }
 
-  @include media-breakpoint-between(lg, xl) {
-    --spacing-container: 24px;
+  @include media-breakpoint-down(md) {
+    --spacing-container: 15px;
   }
+}
 
-  @include media-breakpoint-down(lg) {
-    --spacing-container: 20px;
-  }
+.content {
+  margin-left: var(--spacing-container);
+  margin-right: var(--spacing-container);
 }

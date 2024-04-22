@@ -120,11 +120,11 @@
     background: var(--color-bg-secondary-2);
 
     @include media-breakpoint-up(md) {
-      padding: 24px 48px;
+      padding: 24px 24px 24px 48px;
     }
 
     @include media-breakpoint-down(md) {
-      padding: 9px 10px;
+      padding: 9px 10px 9px 20px;
     }
   }
 
