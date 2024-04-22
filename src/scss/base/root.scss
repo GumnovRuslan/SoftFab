@@ -1,10 +1,18 @@
 :root {
   --typography-htmlFontSize: 16px;
 
-  --color-1: #31947b;
-  --color-2: #202020;
-  --color-3: #f8f8f8;
-  --color-4: #ff035a;
+  --color-primary: #d6d6d6;
+  --color-secondary: #151515;
+  --color-black: #0c0c0c;
+  --color-gray-600: #9c9c9c;
+  --color-gray-700: #8c8c8c;
+
+  --color-text-primary: var(--color-primary, #d6d6d6);
+  --color-text-secondary: var(--color-black);
+
+  --color-bg-primary: var(--color-black);
+  --color-bg-secondary: var(--color-primary, #d6d6d6);
+  --color-bg-secondary-2: var(--color-secondary);
 
   --typography-fontFamily: "WixMadeforDisplay";
 

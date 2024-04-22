@@ -1,5 +1,22 @@
 <section class="header">
+  <input type="checkbox" class="header__checkbox-burger" id="checkboxMenu" />
   <div class="header__inner">
-    <p class="header__logo"><%=title%></p>
+    <div class="header__menu">
+      <p class="header__logo"><%=title%></p>
+      <label for="checkboxMenu" class="header__burger">
+        <div class="header__burger-inner">
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+        </div>
+      </label>
+    </div>
+    <nav class="header__nav">
+      <div class="header__nav-inner">
+        <a href="#" class="header__nav-link btn-active">Home</a>
+        <a href="#" class="header__nav-link">Services</a>
+        <a href="#" class="header__nav-link">Contacts</a>
+      </div>
+    </nav>
   </div>
 </section>

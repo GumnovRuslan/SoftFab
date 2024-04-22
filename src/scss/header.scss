@@ -1,10 +1,144 @@
 .header {
+  background: var(--color-bg-primary);
+
+  @include media-breakpoint-up(md) {
+    padding: 32px 112px;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 15px;
+  }
+
   &__inner {
-    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
   }
 
   &__logo {
-    font-size: 20px;
-    color: #fff;
+    color: var(--color-text-primary);
+    font-weight: 480;
+
+    @include media-breakpoint-up(md) {
+      font-size: 40px;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: 24px;
+      line-height: 30.24px;
+      margin-left: 12px;
+    }
   }
+
+  &__nav {
+    background: var(--color-bg-primary);
+
+    @include media-breakpoint-up(md) {
+      top: 50%;
+      right: 0;
+      position: absolute;
+      transform: translate(0, -50%);
+    }
+
+    @include media-breakpoint-down(md) {
+      height: 0;
+      overflow: hidden;
+      width: 100%;
+      transition: 0.3s;
+      // padding: 0 15px;
+    }
+  }
+
+  &__nav-inner {
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+
+    @include media-breakpoint-up(md) {
+      gap: 32px;
+    }
+
+    @include media-breakpoint-down(md) {
+      justify-content: space-evenly;
+      padding: 10px 13px;
+      background: var(--color-bg-secondary-2);
+    }
+  }
+
+  &__nav-link {
+    border-radius: 100px;
+    color: var(--color-text-primary);
+
+    @include media-breakpoint-up(md) {
+      padding: 8px 24px;
+      font-size: 26px;
+      font-weight: 480;
+    }
+
+    @include media-breakpoint-down(md) {
+      padding: 7px 23px;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+  #checkboxMenu {
+    display: none;
+  }
+
+  #checkboxMenu:checked ~ &__inner &__burger-line:nth-child(2) {
+    opacity: 0;
+    width: 0%;
+  }
+
+  #checkboxMenu:checked ~ &__inner &__burger-line:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  #checkboxMenu:checked ~ &__inner &__burger-line:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+
+  #checkboxMenu:checked ~ &__inner &__nav {
+    margin-top: 15px;
+    height: 54px;
+  }
+
+  &__burger {
+    padding: 10px;
+    cursor: pointer;
+
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+  }
+
+  &__burger-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__burger-line {
+    width: 20px;
+    height: 2px;
+    border-radius: 20px;
+    background: var(--color-text-primary);
+    transition: 0.3s;
+    transform-origin: 50% 50%;
+  }
+}
+
+.btn-active {
+  background: var(--color-bg-secondary);
+  color: var(--color-text-secondary);
 }
