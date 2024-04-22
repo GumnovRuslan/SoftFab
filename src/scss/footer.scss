@@ -1,2 +1,165 @@
 .footer {
+  @include media-breakpoint-up(md) {
+    padding: 0 48px;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 0 15px;
+  }
+
+  &__inner {
+    display: flex;
+
+    @include media-breakpoint-up(md) {
+      gap: 20px;
+    }
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  &__first {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    background: var(--color-bg-secondary-2);
+
+    @include media-breakpoint-up(md) {
+      max-width: 532px;
+      gap: 37px;
+      padding: 73px 53px;
+      border-radius: 40px;
+    }
+
+    @include media-breakpoint-down(md) {
+      gap: 20px;
+      padding: 25px 21px 32px;
+      border-radius: 20px;
+    }
+  }
+
+  &__logo {
+    font-weight: 480;
+    color: var(--color-text-primary);
+
+    @include media-breakpoint-up(md) {
+      font-size: 64px;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: 20px;
+      line-height: 25.2px;
+    }
+  }
+
+  &__text {
+    font-weight: 480;
+    color: var(--color-text-primary);
+
+    @include media-breakpoint-up(md) {
+      font-size: 32px;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: 16px;
+    }
+  }
+
+  &__second {
+    display: flex;
+    flex: content;
+
+    @include media-breakpoint-up(md) {
+      gap: 20px;
+    }
+    @include media-breakpoint-down(md) {
+      gap: 10px;
+    }
+  }
+
+  &__second-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+      gap: 20px;
+    }
+    @include media-breakpoint-down(md) {
+      gap: 10px;
+    }
+  }
+
+  &__second-title {
+    font-weight: 480;
+    color: var(--color-text-primary);
+    background: var(--color-bg-secondary-2);
+
+    @include media-breakpoint-up(md) {
+      padding: 45px 48px;
+      font-size: 36px;
+      line-height: 45.36px;
+      border-radius: 40px;
+    }
+
+    @include media-breakpoint-down(md) {
+      padding: 20px;
+      font-size: 20px;
+      line-height: 26px;
+      border-radius: 20px;
+    }
+  }
+
+  &__second-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    border-radius: 50px;
+    background: var(--color-bg-secondary-2);
+
+    @include media-breakpoint-up(md) {
+      padding: 24px 48px;
+    }
+
+    @include media-breakpoint-down(md) {
+      padding: 9px 10px;
+    }
+  }
+
+  &__second-button:hover &__second-button-icon {
+    color: var(--color-text-secondary);
+    fill: var(--color-text-primary);
+  }
+
+  &__second-button-text {
+    color: var(--color-text-primary);
+
+    @include media-breakpoint-up(md) {
+      font-size: 32px;
+      line-height: 40.32px;
+      font-weight: 480;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-weight: 400;
+      line-height: 20.8px;
+    }
+  }
+
+  &__second-button-icon {
+    color: var(--color-text-primary);
+    transition: 0.2s;
+
+    @include media-breakpoint-up(md) {
+      max-width: 56px;
+      max-height: 56px;
+    }
+
+    @include media-breakpoint-down(md) {
+      max-width: 22px;
+      max-height: 22px;
+    }
+  }
 }
