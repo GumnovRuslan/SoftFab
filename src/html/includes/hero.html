@@ -1,121 +1,49 @@
-<div class="hero">
-  <div class="hero__header">
-    <div class="hero__header-image">
-      <img src="../../img/Rectangle 8.png" alt="" class="hero__header-img" />
+<section class="hero">
+  <div class="hero__inner">
+    <div class="hero__header">
+      <div class="hero__header-image">
+        <img src="../../img/Rectangle 8.png" alt="" class="hero__header-img" />
+      </div>
+      <div class="hero__header-content block">
+        <h1 class="hero__header-content-title title">
+          We <span class="hero__header-content-accent">build</span> digital experiences.
+        </h1>
+        <button
+          class="hero__header-content-button button--active"
+          onClick="window.<%=id%>.showModal()"
+        >
+          Contact us
+        </button>
+      </div>
     </div>
-    <div class="hero__header-content">
-      <h1 class="hero__header-content-title">
-        We <span class="hero__header-content-accent">build</span> digital experiences.
-      </h1>
-      <dialog class="hero__popup" id="discuss">
-        <form class="hero__popup-form" action="">
-          <div class="hero__popup-form-header">
-            <p class="hero__popup-form-header-title">Обсудить проект</p>
-            <button
-              type="button"
-              class="hero__popup-form-header-icon"
-              onClick="window.discuss.close()"
-            >
-              <svg viewBox="0 0 44 44" fill="none">
-                <path
-                  d="M12 12L32 32M12 32L32 12"
-                  stroke="currentColor"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </button>
-          </div>
-          <div class="hero__popup-form-content">
-            <div class="hero__popup-input-container">
-              <input class="hero__popup-input" type="text" placeholder="Имя*" required />
-              <button type="button" class="hero__popup-input-container-icon">
-                <svg viewBox="0 0 44 44" fill="none">
-                  <path
-                    d="M12 12L32 32M12 32L32 12"
-                    stroke="currentColor"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div class="hero__popup-input-container">
-              <input class="hero__popup-input" type="tel" placeholder="Телефон" />
-              <button type="button" class="hero__popup-input-container-icon">
-                <svg viewBox="0 0 44 44" fill="none">
-                  <path
-                    d="M12 12L32 32M12 32L32 12"
-                    stroke="currentColor"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div class="hero__popup-input-container">
-              <input class="hero__popup-input" type="email" placeholder="Эл. почта*" required />
-              <button type="button" class="hero__popup-input-container-icon">
-                <svg viewBox="0 0 44 44" fill="none">
-                  <path
-                    d="M12 12L32 32M12 32L32 12"
-                    stroke="currentColor"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div class="hero__popup-input-container">
-              <input class="hero__popup-input" type="text" placeholder="Компания" />
-              <button type="button" class="hero__popup-input-container-icon">
-                <svg viewBox="0 0 44 44" fill="none">
-                  <path
-                    d="M12 12L32 32M12 32L32 12"
-                    stroke="currentColor"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div class="hero__popup-input-container">
-              <textarea class="hero__popup-textarea" placeholder="О проекте*" required></textarea>
-              <button type="button" class="hero__popup-input-container-icon">
-                <svg viewBox="0 0 44 44" fill="none">
-                  <path
-                    d="M12 12L32 32M12 32L32 12"
-                    stroke="currentColor"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div class="hero__popup-form-bottom">
-            <button class="hero__popup-form-bottom-button">Отправить</button>
-          </div>
-        </form>
-      </dialog>
-      <button class="hero__header-content-button" onClick="window.discuss.showModal()">
-        Contact us
-      </button>
+    <div class="hero__content">
+      <div class="hero__article block">
+        <p class="hero__article-text">
+          Lorem ipsum dolor sit amet consectetur. Ullamcorper in enim gravida velit tristique leo
+          vivamus mollis faucibus. Risus at donec justo vitae nam amet lectus etiam. Urna massa amet
+          nulla arcu sed turpis neque nascetur in. Imperdiet risus ipsum enim volutpat tellus.
+        </p>
+        <span class="hero__article-button-icon">
+          <svg viewBox="0 0 56 56" fill="inherit">
+            <circle cx="28" cy="28" r="26.5" stroke="#d6d6d6" stroke-width="3" />
+            <path
+              d="M25 39L36 28L25 17"
+              stroke="currentColor"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+      </div>
+      <div class="hero__statistic block">
+        <span class="hero__statistic-number">93</span>
+        <span class="hero__statistic-text">Projects Completed</span>
+      </div>
+      <div class="hero__statistic block">
+        <span class="hero__statistic-number">2310</span>
+        <span class="hero__statistic-text">Happy Clients</span>
+      </div>
     </div>
   </div>
-  <div class="hero__content">
-    <div class="hero__content-card">
-      <p class="hero__content-text">
-        Lorem ipsum dolor sit amet consectetur. Ullamcorper in enim gravida velit tristique leo
-        vivamus mollis faucibus. Risus at donec justo vitae nam amet lectus etiam. Urna massa amet
-        nulla arcu sed turpis neque nascetur in. Imperdiet risus ipsum enim volutpat tellus.
-      </p>
-    </div>
-  </div>
-</div>
+</section>

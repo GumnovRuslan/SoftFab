@@ -26,9 +26,64 @@ a {
   color: white;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+}
+
+svg {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-weight: 480;
+
+  @include media-breakpoint-up(md) {
+    font-size: 80px;
+    line-height: 88px;
+  }
+  @include media-breakpoint-down(md) {
+    font-size: 24px;
+    line-height: 26.4px;
+  }
+}
+
+h2 {
+  font-weight: 480;
+
+  @include media-breakpoint-up(md) {
+    font-size: 64px;
+    line-height: 80.64px;
+  }
+  @include media-breakpoint-down(md) {
+    font-size: 24px;
+    line-height: 30.24px;
+  }
+}
+
 .content {
   flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  @include media-breakpoint-up(md) {
+    gap: 144px;
+    margin-bottom: 180px;
+  }
+
+  @include media-breakpoint-down(md) {
+    gap: 80px;
+    margin-bottom: 80px;
+  }
 }
 .footer {
   flex-shrink: 0;
+}
+
+.footer,
+.content {
+  margin-left: var(--spacing-container);
+  margin-right: var(--spacing-container);
 }

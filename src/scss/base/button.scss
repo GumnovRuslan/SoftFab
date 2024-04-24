@@ -1,0 +1,45 @@
+.button {
+  outline: 2px solid transparent !important;
+  transition: 0.2s;
+  color: var(--color-text-primary);
+  background: transparent;
+
+  @include media-breakpoint-up(md) {
+    font-weight: 480;
+    border-radius: 40px;
+  }
+
+  @include media-breakpoint-down(md) {
+    font-weight: 400;
+    border-radius: 20px;
+  }
+
+  &:hover {
+    outline-color: var(--color-text-primary) !important;
+    background: var(--color-bg-primary) !important;
+    color: var(--color-text-primary);
+  }
+
+  &--active {
+    color: var(--color-text-secondary);
+    background: var(--color-bg-secondary);
+    outline: 2px solid transparent !important;
+    transition: 0.2s;
+
+    @include media-breakpoint-up(md) {
+      font-weight: 480;
+      border-radius: 40px;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-weight: 400;
+      border-radius: 20px;
+    }
+
+    &:hover {
+      outline-color: var(--color-text-primary) !important;
+      background: var(--color-bg-primary) !important;
+      color: var(--color-text-primary);
+    }
+  }
+}

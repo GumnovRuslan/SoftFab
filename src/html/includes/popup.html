@@ -1,0 +1,93 @@
+<dialog class="popup" id="<%=id%>">
+  <form class="popup__form" action="">
+    <div class="popup__header">
+      <p class="popup__header-title">Обсудить проект</p>
+      <button type="button" class="popup__header-icon" onClick="window.<%=id%>.close()">
+        <svg viewBox="0 0 44 44" fill="none">
+          <path
+            d="M12 12L32 32M12 32L32 12"
+            stroke="currentColor"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+    <div class="popup__form-content">
+      <div class="popup__input-container">
+        <input class="popup__input input" type="text" placeholder="Имя*" required />
+        <button type="button" class="popup__input-icon">
+          <svg viewBox="0 0 44 44" fill="none">
+            <path
+              d="M12 12L32 32M12 32L32 12"
+              stroke="currentColor"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="popup__input-container">
+        <input class="popup__input input" type="tel" placeholder="Телефон" />
+        <button type="button" class="popup__input-icon">
+          <svg viewBox="0 0 44 44" fill="none">
+            <path
+              d="M12 12L32 32M12 32L32 12"
+              stroke="currentColor"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="popup__input-container">
+        <input class="popup__input input" type="email" placeholder="Эл. почта*" required />
+        <button type="button" class="popup__input-icon">
+          <svg viewBox="0 0 44 44" fill="none">
+            <path
+              d="M12 12L32 32M12 32L32 12"
+              stroke="currentColor"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="popup__input-container">
+        <input class="popup__input input" type="text" placeholder="Компания" />
+        <button type="button" class="popup__input-icon">
+          <svg viewBox="0 0 44 44" fill="none">
+            <path
+              d="M12 12L32 32M12 32L32 12"
+              stroke="currentColor"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="popup__input-container">
+        <textarea class="popup__textarea input" placeholder="О проекте*" required></textarea>
+        <button type="button" class="popup__input-icon">
+          <svg viewBox="0 0 44 44" fill="none">
+            <path
+              d="M12 12L32 32M12 32L32 12"
+              stroke="currentColor"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="popup__form-bottom">
+      <button class="popup__form-button button--active">Отправить</button>
+    </div>
+  </form>
+</dialog>

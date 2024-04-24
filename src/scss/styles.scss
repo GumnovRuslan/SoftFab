@@ -6,9 +6,15 @@
 @import "base/containers";
 @import "base/global";
 
+@import "base/button";
+@import "base/input";
+@import "base/block";
+@import "base/title";
+@import "base/text";
+
 //SECTIONS
 
 //BLOCKS
 @import "header";
-@import "hero";
+@import "home";
 @import "footer";
