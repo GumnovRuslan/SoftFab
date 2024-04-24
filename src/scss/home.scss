@@ -50,6 +50,7 @@
     padding: 0;
     background: transparent;
     color: var(--color-text-primary);
+    border-radius: 50%;
 
     @include media-breakpoint-up(md) {
       max-width: 40px;
@@ -59,6 +60,10 @@
     @include media-breakpoint-down(md) {
       max-width: 26px;
       max-height: 26px;
+    }
+
+    &:hover {
+      background: var(--color-bg-primary-2);
     }
   }
 
@@ -480,7 +485,6 @@
   &__title {
     display: flex;
     align-items: center;
-    justify-content: center;
 
     @include media-breakpoint-up(md) {
       padding: 30px 48px;
@@ -488,6 +492,7 @@
     }
 
     @include media-breakpoint-down(md) {
+      justify-content: center;
       padding: 30px;
     }
   }

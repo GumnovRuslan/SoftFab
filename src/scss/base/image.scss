@@ -1,0 +1,11 @@
+.image {
+  object-fit: cover;
+
+  @include media-breakpoint-up(md) {
+    border-radius: 40px;
+  }
+
+  @include media-breakpoint-down(md) {
+    border-radius: 20px;
+  }
+}
