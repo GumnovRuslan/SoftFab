@@ -1,11 +1,15 @@
 .header {
   background: var(--color-bg-primary);
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     padding: 32px 112px;
   }
 
-  @include media-breakpoint-down(md) {
+  // @include media-breakpoint-between(md, lg) {
+  //   padding: 20px;
+  // }
+
+  @include media-breakpoint-down(lg) {
     padding: 15px;
   }
 
@@ -28,11 +32,11 @@
     color: var(--color-text-primary);
     font-weight: 480;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       font-size: 40px;
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       font-size: 24px;
       line-height: 30.24px;
       margin-left: 12px;
@@ -42,14 +46,14 @@
   &__nav {
     background: var(--color-bg-primary);
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       top: 50%;
       right: 0;
       position: absolute;
       transform: translate(0, -50%);
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       height: 0;
       overflow: hidden;
       width: 100%;
@@ -62,11 +66,11 @@
     align-items: center;
     border-radius: 100px;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       gap: 32px;
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       justify-content: space-evenly;
       padding: 10px 13px;
       background: var(--color-bg-secondary-2);
@@ -74,12 +78,12 @@
   }
 
   &__nav-link {
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       padding: 8px 22px;
       font-size: 26px;
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       padding: 7px 23px;
       font-size: 16px;
     }
@@ -111,7 +115,7 @@
     padding: 10px;
     cursor: pointer;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       display: none;
     }
   }
