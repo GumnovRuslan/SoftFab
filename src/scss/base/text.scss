@@ -1,13 +1,13 @@
 .text {
   color: var(--color-text-primary);
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     font-weight: 480;
     font-size: 32px;
     line-height: 41.6px;
   }
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     font-weight: 400;
     font-size: 16px;
     line-height: 20.8px;
@@ -16,13 +16,13 @@
   &-secondary {
     color: var(--color-text-primary);
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       font-weight: 480px;
       font-size: 26px;
       line-height: 36.4px;
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       font-weight: 400px;
       font-size: 16px;
       line-height: 20.8px;

@@ -21,11 +21,11 @@
 
   --typography-fontFamily: "WixMadeforDisplay";
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     --spacing-container: 48px;
   }
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     --spacing-container: 15px;
   }
 }

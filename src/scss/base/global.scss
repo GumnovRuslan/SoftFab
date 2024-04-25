@@ -40,11 +40,17 @@ svg {
 h1 {
   font-weight: 480;
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(xl) {
     font-size: 80px;
     line-height: 88px;
   }
-  @include media-breakpoint-down(md) {
+
+  @include media-breakpoint-between(lg, xl) {
+    font-size: 60px;
+    line-height: 68px;
+  }
+
+  @include media-breakpoint-down(lg) {
     font-size: 24px;
     line-height: 26.4px;
   }
@@ -53,11 +59,15 @@ h1 {
 h2 {
   font-weight: 480;
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(xl) {
     font-size: 64px;
     line-height: 80.64px;
   }
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-between(lg, xl) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+  @include media-breakpoint-down(lg) {
     font-size: 24px;
     line-height: 30.24px;
   }
@@ -68,12 +78,12 @@ h2 {
   display: flex;
   flex-direction: column;
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     gap: 144px;
     margin-bottom: 180px;
   }
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     gap: 80px;
     margin-bottom: 80px;
   }

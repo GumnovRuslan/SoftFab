@@ -1,0 +1,22 @@
+.icon-arrow {
+  color: var(--color-text-secondary);
+  fill: var(--color-text-primary);
+  transition: 0.2s;
+  width: 100%;
+  cursor: pointer;
+
+  @include media-breakpoint-up(xl) {
+    max-width: 56px;
+    max-height: 56px;
+  }
+
+  @include media-breakpoint-between(lg, xl) {
+    max-width: 45px;
+    max-height: 45px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    max-width: 26px;
+    max-height: 26px;
+  }
+}

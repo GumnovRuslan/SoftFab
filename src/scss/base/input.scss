@@ -13,12 +13,12 @@
     outline: 2px solid var(--color-bg-secondary);
   }
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     font-size: 20px;
     line-height: 26px;
   }
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     font-size: 16px;
     line-height: 20.8px;
   }

@@ -4,12 +4,12 @@
   color: var(--color-text-primary);
   background: transparent;
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     font-weight: 480;
     border-radius: 40px;
   }
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     font-weight: 400;
     border-radius: 20px;
   }
@@ -26,12 +26,12 @@
     outline: 2px solid transparent !important;
     transition: 0.2s;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       font-weight: 480;
       border-radius: 40px;
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       font-weight: 400;
       border-radius: 20px;
     }
@@ -41,5 +41,15 @@
       background: var(--color-bg-primary) !important;
       color: var(--color-text-primary);
     }
+  }
+
+  &--second {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    border-radius: 100px;
+    background: var(--color-bg-secondary-2);
+    color: var(--color-text-primary);
   }
 }

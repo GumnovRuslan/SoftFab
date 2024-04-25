@@ -19,23 +19,25 @@
   }
 
   &__first {
-    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
-    background: var(--color-bg-secondary-2);
-
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
       max-width: 532px;
       gap: 37px;
       padding: 73px 53px;
-      border-radius: 40px;
+    }
+
+    @include media-breakpoint-between(lg, xl) {
+      max-width: 40%;
+      gap: 20px;
+      padding: 50px 40px;
     }
 
     @include media-breakpoint-down(lg) {
       gap: 20px;
       padding: 25px 21px 32px;
-      border-radius: 20px;
     }
   }
 
@@ -43,8 +45,14 @@
     font-weight: 480;
     color: var(--color-text-primary);
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
       font-size: 64px;
+      line-height: 80.64px;
+    }
+
+    @include media-breakpoint-between(lg, xl) {
+      font-size: 44px;
+      line-height: 50.64px;
     }
 
     @include media-breakpoint-down(lg) {
@@ -57,18 +65,25 @@
     font-weight: 480;
     color: var(--color-text-primary);
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
       font-size: 32px;
+      line-height: 40.32px;
+    }
+
+    @include media-breakpoint-between(lg, xl) {
+      font-size: 24px;
+      line-height: 30.32px;
     }
 
     @include media-breakpoint-down(lg) {
       font-size: 16px;
+      line-height: 20.16px;
     }
   }
 
   &__second {
+    flex: 1 0 auto;
     display: flex;
-    flex: content;
 
     @include media-breakpoint-up(lg) {
       gap: 20px;
@@ -94,72 +109,50 @@
   &__second-title {
     font-weight: 480;
     color: var(--color-text-primary);
-    background: var(--color-bg-secondary-2);
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
       padding: 45px 48px;
       font-size: 36px;
       line-height: 45.36px;
-      border-radius: 40px;
+    }
+
+    @include media-breakpoint-between(lg, xl) {
+      padding: 35px;
+      font-size: 28px;
+      line-height: 32.36px;
     }
 
     @include media-breakpoint-down(lg) {
       padding: 20px;
       font-size: 20px;
       line-height: 26px;
-      border-radius: 20px;
     }
   }
-
   &__second-button {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 15px;
-    border-radius: 50px;
-    background: var(--color-bg-secondary-2);
-
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
       padding: 24px 24px 24px 48px;
-    }
-
-    @include media-breakpoint-down(lg) {
-      padding: 9px 10px 9px 20px;
-    }
-  }
-
-  &__second-button:hover &__second-button-icon {
-    color: var(--color-text-secondary);
-    fill: var(--color-text-primary);
-  }
-
-  &__second-button-text {
-    color: var(--color-text-primary);
-
-    @include media-breakpoint-up(lg) {
       font-size: 32px;
       line-height: 40.32px;
       font-weight: 480;
     }
 
+    @include media-breakpoint-between(lg, xl) {
+      padding: 20px 25px 20px 35px;
+      font-size: 26px;
+      line-height: 32.36px;
+      font-weight: 480;
+    }
+
     @include media-breakpoint-down(lg) {
+      padding: 9px 10px 9px 20px;
+      font-size: 16px;
       font-weight: 400;
       line-height: 20.8px;
     }
   }
 
-  &__second-button-icon {
+  &__second-button:hover &__second-button-icon {
     color: var(--color-text-primary);
-    transition: 0.2s;
-
-    @include media-breakpoint-up(lg) {
-      max-width: 56px;
-      max-height: 56px;
-    }
-
-    @include media-breakpoint-down(lg) {
-      max-width: 22px;
-      max-height: 22px;
-    }
+    fill: transparent;
   }
 }

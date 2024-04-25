@@ -8,12 +8,12 @@
     background: #adadad30;
   }
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     border-radius: 40px;
     padding: 32px;
   }
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     border-radius: 20px;
     padding: 24px;
   }
@@ -23,11 +23,11 @@
     align-items: center;
     justify-content: space-between;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       margin-bottom: 48px;
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       margin-bottom: 32px;
     }
   }
@@ -36,11 +36,11 @@
     font-weight: 600;
     color: var(--color-text-primary);
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       font-size: 32px;
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       font-size: 20px;
       padding-left: 8px;
     }
@@ -52,12 +52,12 @@
     color: var(--color-text-primary);
     border-radius: 50%;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       max-width: 40px;
       max-height: 40px;
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       max-width: 26px;
       max-height: 26px;
     }
@@ -80,11 +80,11 @@
 
   &__input,
   &__textarea {
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       padding: 12px 56px 12px 24px;
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       padding: 10px 56px 10px 16px;
     }
   }
@@ -119,11 +119,11 @@
     max-width: 24px;
     max-height: 24px;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       right: 16px;
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       right: 12px;
     }
   }
@@ -134,12 +134,12 @@
   }
 
   &__form-button {
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       padding: 16px 20px;
       font-size: 20px;
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       padding: 8px 16px;
       font-size: 16px;
     }
@@ -151,11 +151,11 @@
     display: flex;
     flex-direction: column;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       gap: 20px;
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       gap: 10px;
     }
   }
@@ -163,11 +163,11 @@
   &__header {
     display: flex;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       gap: 20px;
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       gap: 10px;
     }
   }
@@ -178,30 +178,17 @@
     max-height: 380px;
   }
 
-  &__header-img {
-    object-fit: cover;
-    width: 100%;
-
-    @include media-breakpoint-up(md) {
-      border-radius: 40px;
-    }
-
-    @include media-breakpoint-down(md) {
-      border-radius: 20px;
-    }
-  }
-
   &__header-content {
     display: flex;
     flex-direction: column;
     gap: 50px;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       padding: 48px 32px 32px;
       gap: 50px;
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       width: 65%;
       flex: 1 0 auto;
       padding: 22px 22px 12px;
@@ -213,21 +200,17 @@
     flex: 100%;
   }
 
-  &__header-content-accent {
-    color: var(--color-text-primary-2);
-  }
-
   &__header-content-button {
     align-self: flex-end;
     max-width: 220px;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       font-size: 26px;
       line-height: 32.76px;
       padding: 16px 40px;
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       line-height: 20.8px;
       padding: 8px 17px;
     }
@@ -235,15 +218,14 @@
 
   &__content {
     display: grid;
-
     grid-template-rows: repeat(2, auto);
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       grid-template-columns: 1fr 435px;
       gap: 20px;
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       grid-template-columns: repeat(2, 1fr);
       gap: 10px;
     }
@@ -251,87 +233,51 @@
 
   &__article {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(xl) {
       padding: 64px 81px;
       grid-row: 1 / 3;
     }
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-between(lg, xl) {
+      padding: 44px 50px;
+      grid-row: 1 / 3;
+    }
+    @include media-breakpoint-down(lg) {
       padding: 30px 32px 39px;
       grid-column: 1 / 3;
     }
   }
 
-  &__article-text {
-    color: var(--color-text-primary);
-
-    @include media-breakpoint-up(md) {
-      font-weight: 480;
-      font-size: 32px;
-      line-height: 41.6px;
-    }
-
-    @include media-breakpoint-down(md) {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 20.8px;
-    }
-  }
-
   &__article-button-icon {
     position: absolute;
-
-    display: flex;
     transform: rotate(90deg);
-    color: var(--color-bg-primary);
-    fill: var(--color-text-primary);
-    cursor: pointer;
 
-    @include media-breakpoint-up(md) {
-      max-width: 56px;
-      max-height: 56px;
+    @include media-breakpoint-up(lg) {
       bottom: 32px;
       right: 32px;
     }
 
-    @include media-breakpoint-down(md) {
-      max-width: 26px;
-      max-height: 26px;
+    @include media-breakpoint-down(lg) {
       bottom: 12px;
       right: 12px;
     }
   }
 
-  // &__statistics {
-  //   height: 100%;
-  //   flex: content;
-  //   flex: 1 0 auto;
-  //   display: flex;
-
-  //   @include media-breakpoint-up(md) {
-  //     gap: 20px;
-  //     flex-direction: column;
-  //   }
-
-  //   @include media-breakpoint-down(md) {
-  //     gap: 10px;
-  //   }
-  // }
-
   &__statistic {
-    // height: max-content;
-    // max-width: 435px;
     display: flex;
     color: var(--color-text-primary);
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       align-items: center;
       justify-content: space-between;
       padding: 40px 54px;
       gap: 30px;
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       flex-direction: column;
       padding: 20px 32px;
       gap: 5px;
@@ -341,22 +287,22 @@
   &__statistic-number {
     font-weight: 480;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       font-size: 80px;
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       font-size: 36px;
     }
   }
 
   &__statistic-text {
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       font-weight: 480;
       font-size: 32px;
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       font-size: 16px;
       line-height: 20.8px;
     }
@@ -367,12 +313,12 @@
   &__inner {
     display: grid;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       grid-template-columns: 435px 1fr 435px;
       gap: 20px;
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       grid-template-columns: 1fr 107px;
       grid-template-rows: auto auto 220px;
       gap: 10px;
@@ -380,11 +326,11 @@
   }
 
   &__title {
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       grid-column: 1 / 3;
       padding: 75px;
     }
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       grid-column: 1 / 3;
       grid-row: 1;
       padding: 33px 20px;
@@ -397,49 +343,21 @@
     align-items: center;
     justify-content: center;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       grid-column: 2 / 4;
       padding: 72px;
     }
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       grid-column: 1 / 2;
       grid-row: 2;
       padding: 25px 32px 25px 32px;
     }
   }
 
-  &__article-text {
-    color: var(--color-text-primary);
-
-    @include media-breakpoint-up(md) {
-      font-size: 32px;
-      font-weight: 480;
-      line-height: 41.6px;
-    }
-
-    @include media-breakpoint-down(md) {
-      line-height: 20.8px;
-    }
-  }
-
-  &__image {
-    img {
-      object-fit: cover;
-
-      @include media-breakpoint-up(md) {
-        border-radius: 40px;
-      }
-
-      @include media-breakpoint-down(md) {
-        border-radius: 20px;
-      }
-    }
-  }
-
   &__image-active {
     position: relative;
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       grid-row: 3;
       grid-column: 1 / 3;
     }
@@ -448,7 +366,7 @@
   &__button {
     position: absolute;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       bottom: 20px;
       right: 24px;
       font-size: 26px;
@@ -456,7 +374,7 @@
       padding: 14px 28px;
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       bottom: 12px;
       right: 12px;
       font-size: 16px;
@@ -470,12 +388,12 @@
   &__inner {
     display: grid;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       grid-template-columns: repeat(2, 1fr);
       grid-auto-rows: auto auto auto auto 195px;
       gap: 10px;
@@ -486,63 +404,49 @@
     display: flex;
     align-items: center;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       padding: 30px 48px;
       grid-column: 1 / 3;
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       justify-content: center;
       padding: 30px;
     }
   }
 
-  &__image {
-    img {
-      object-fit: cover;
-
-      @include media-breakpoint-up(md) {
-        border-radius: 40px;
-      }
-
-      @include media-breakpoint-down(md) {
-        border-radius: 20px;
-      }
-    }
-  }
-
   &__image:nth-of-type(2) {
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       grid-column: 3 / 4;
       grid-row: 1 / 3;
     }
   }
 
   &__article {
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       padding: 45px 50px;
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       padding: 32px;
       grid-column: 1 / 3;
     }
   }
 
   &__article:nth-of-type(5) {
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       grid-row: 2;
     }
   }
 
   &__article:nth-of-type(6) {
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       grid-row: 3;
     }
   }
 
   &__article:nth-of-type(7) {
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       grid-row: 4;
     }
   }
@@ -552,18 +456,15 @@
 }
 
 .offer {
-  &__inner {
-  }
-
   &__content {
     display: flex;
     flex-direction: column;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       gap: 46px;
       padding: 64px 48px 48px 72px;
     }
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       gap: 12px;
       padding: 20px 12px 12px 20px;
     }
@@ -572,13 +473,13 @@
   &__text {
     font-weight: 480;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       font-size: 80px;
       max-width: 800px;
       line-height: 88px;
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       font-size: 24px;
       max-width: 170px;
       line-height: 26.4px;
@@ -589,14 +490,14 @@
     align-self: flex-end;
     height: max-content;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       padding: 21px 40px;
       font-weight: 480;
       font-size: 32px;
       line-height: 40.32px;
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       padding: 8px 16px;
       font-size: 16px;
       line-height: 20.8px;
