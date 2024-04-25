@@ -96,12 +96,16 @@
 
   &__article-icon {
     position: absolute;
-    bottom: 12px;
-    right: 12px;
     transform: rotate(90deg);
 
     @include media-breakpoint-up(lg) {
-      display: none;
+      bottom: 32px;
+      right: 32px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      bottom: 12px;
+      right: 12px;
     }
   }
 }
@@ -187,12 +191,16 @@
 
   &__article-icon {
     position: absolute;
-    bottom: 12px;
-    right: 12px;
     transform: rotate(90deg);
 
     @include media-breakpoint-up(lg) {
-      display: none;
+      bottom: 32px;
+      right: 32px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      bottom: 12px;
+      right: 12px;
     }
   }
 }

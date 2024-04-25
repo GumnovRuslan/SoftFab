@@ -70,7 +70,6 @@ const config = {
       },
     ],
   },
-
   plugins: [
     new MiniCssExtractPlugin({
       filename: "./css/main.min.css",

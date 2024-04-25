@@ -1,5 +1,5 @@
 <dialog class="popup" id="<%=id%>">
-  <form class="popup__form" action="">
+  <form class="popup__form" action="" id="popupForm">
     <div class="popup__header">
       <p class="popup__header-title">Обсудить проект</p>
       <button type="button" class="popup__header-icon" onClick="window.<%=id%>.close()">
@@ -87,7 +87,7 @@
       </div>
     </div>
     <div class="popup__form-bottom">
-      <button class="popup__form-button button--active">Отправить</button>
+      <button class="popup__form-button button--active" id="popupButton">Отправить</button>
     </div>
   </form>
 </dialog>

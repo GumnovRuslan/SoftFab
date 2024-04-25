@@ -10,7 +10,7 @@
   }
 
   &:focus {
-    outline: 2px solid var(--color-bg-secondary);
+    outline: 2px solid s;
   }
 
   @include media-breakpoint-up(lg) {
